@@ -27,4 +27,12 @@ Other components are the following:
 
 ## Developing
 
-You can fork this repository, add your new entriws to the index.html and after the pull request they will be published.
+You can fork this repository, and add your new entries (links to your swagger files) to the index.html, in the urls section like this:
+
+		urls: [ 
+{url: "https://raw.githubusercontent.com/sonata-nfv/repository_X/rest_api_model.json", name: "5GTANGO Repository X API v1"},
+{url: "https://raw.githubusercontent.com/sonata-nfv/repository_Y/rest_api_model.yaml", name: "5GTANGO Repository Y v1"},
+	],
+
+After the pull request is accepted, new elements will be published in https://sonata-nfv.github.io/tng-doc/
+
