@@ -29,7 +29,7 @@ Other components are the following:
 
 You can fork this repository, and add your new entries (links to your swagger files) to the index.html, in the urls section like this:
 
-		urls: [ 
+urls: [
 {url: "https://raw.githubusercontent.com/sonata-nfv/repository_X/rest_api_model.json", name: "5GTANGO Repository X API v1"},
 {url: "https://raw.githubusercontent.com/sonata-nfv/repository_Y/rest_api_model.yaml", name: "5GTANGO Repository Y v1"},
 	],
