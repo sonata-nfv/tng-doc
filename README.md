@@ -1,37 +1,30 @@
-## Welcome to GitHub Pages
+[![Build Status](https://jenkins.sonata-nfv.eu/buildStatus/icon?job=tng-api-gtw/master)](https://jenkins.sonata-nfv.eu/job/tng-api-gtw/master)
+[![Join the chat at https://gitter.im/5gtango/tango-schema](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/5gtango/5gtango-sp)
 
-You can use the [editor on GitHub](https://github.com/sonata-nfv/tng-doc/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+<p align="center"><img src="https://github.com/sonata-nfv/tng-api-gtw/wiki/images/sonata-5gtango-logo-500px.png" /></p>
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+# 5GTANGO DOCUMENTATION
+This is the 5GTANGO Documentation Repository.
 
-### Markdown
+Please see [details on the overall 5GTANGO architecture here](https://5gtango.eu/project-outcomes/deliverables/2-uncategorised/31-d2-2-architecture-design.html). 
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## How does this work?
 
-```markdown
-Syntax highlighted code block
+After creating a new API or modifyng an existing one, the developer must create/update a swagger spec description file. This document will help the current team and newcomers to understand how their API works.
 
-# Header 1
-## Header 2
-### Header 3
+Here [https://swagger.io/docs/specification/about/], you can get full detailed info on how to create the swagger files.
 
-- Bulleted
-- List
+After created, you only need to add the link to this file in 'urls' section in the 'index.html' of this project. And after some seconds your swagger spec doc file will be available in the tng-doc page [https://sonata-nfv.github.io/tng-doc/].
 
-1. Numbered
-2. List
+Other components are the following:
 
-**Bold** and _Italic_ and `Code` text
+* [tng-common](https://github.com/sonata-nfv/tng-gtk-common/);
+* [tng-gtk-sp](https://github.com/sonata-nfv/tng-gtk-sp);
+* [tng-gtk-vnv](https://github.com/sonata-nfv/tng-gtk-vnv);
+* [tng-policy-mngr](https://github.com/sonata-nfv/tng-policy-mngr);
+* [tng-sla-mgmt](https://github.com/sonata-nfv/tng-sla-mgmt);
+* [tng-slice-mngr](https://github.com/sonata-nfv/tng-slice-mngr);
 
-[Link](url) and ![Image](src)
-```
+## Developing
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/sonata-nfv/tng-doc/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+You can fork this repository, add your new entriws to the index.html and after the pull request they will be published.
